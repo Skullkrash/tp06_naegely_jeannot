@@ -1,0 +1,9 @@
+<div class="remainder">(by the way, 'a' and 'a' are working login and password + account creation and update are only done in the back and http service 'cause I'm lazy)</div>
+<br/>
+<label for="login">login : </label><input [(ngModel)]="login" /><br/>
+<label for="password">password : </label><input [(ngModel)]="password" type="password" /><br />
+@if (errorMessage != '') {
+  <div class="error">{{ errorMessage }}</div>
+}
+<br/>
+<button (click)="attemptLogin()">Connexion</button>

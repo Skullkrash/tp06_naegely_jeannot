@@ -1,0 +1,5 @@
+<h2> Hello {{ login }} ! <br/> Here are objekts you might want :</h2>
+
+<div *ngFor="let objekt of objekts$ | async; let i = index">
+  <div>{{ objekt.title }} - {{ objekt.price }} €</div>
+</div>
